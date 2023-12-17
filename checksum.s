@@ -1,11 +1,11 @@
-.text
+	.text
+	.macro read_d()
+       	nop                     # Reads from stdin, a decimal (%d) number
+       	li $v0, 5
+       	syscall                 
+       	nop                     # The value is now in $v0
+	.end_macro
 	.globl checksum
-		.macro read_d()
-        	nop                     # Reads from stdin, a decimal (%d) number
-        	li $v0, 5
-        	syscall                 
-        	nop                     # The value is now in $v0
-		.end_macro
 			# $t0 : i
 			# $t1 : sum
 			# $t2 : header_checksum
@@ -75,12 +75,4 @@ is:				nop						#			;
 isnt:		nop							#		else {
 				move $v0, $t6			#			$v0 = $t6;
 				jr $ra 					#			return $v0;
-				
 										#		}
-
-# Task 1 complete: Tue Oct 10 21:59:25 PDT 2023
-
-# Task 2 complete: Tue Oct 10 22:24:47 PDT 2023
-
-
-# Task 3 complete: Thu Oct 12 10:59:15 PDT 2023

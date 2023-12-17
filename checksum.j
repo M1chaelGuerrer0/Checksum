@@ -1,7 +1,7 @@
 	public static int checksum() {
 		
 		int sum = 0;
-		int header_checksum;
+		int header_checksum = 0;
 		final int max_int = 255;
 		int quotient;
 		int remainder;
