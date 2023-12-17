@@ -25,16 +25,16 @@ saved_double:   .double 1.0
 main:           nop      
 
                 # Set the T registers to be random values
-                li $t0, 12535
-                li $t1, 15520
-                li $t2, 4840
-                li $t3, 16627
-                li $t4, 12203
-                li $t5, 220
-                li $t6, 25948
-                li $t7, 10379
-                li $t8, 9168
-                li $t9, 11405
+                li $t0, 31138
+                li $t1, 13496
+                li $t2, 7528
+                li $t3, 13244
+                li $t4, 25715
+                li $t5, 9289
+                li $t6, 24684
+                li $t7, 23403
+                li $t8, 27042
+                li $t9, 9852
 
                 # Set the S registers to 0xDeadBeef
                 li $s0, 0xDeadBeef
